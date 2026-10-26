@@ -28,35 +28,35 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#top" className="flex items-center gap-2 group" aria-label="Grow Marketings home">
           <GrowingLogo size={36} />
           <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-neutral-200 transition-colors lowercase">
-            growing<span className="text-[#3d50c2]">.</span>
+            Grow Marketings<span className="text-[#3d50c2]">.</span>
           </span>
         </a>
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-6 text-xs font-medium text-neutral-300">
           <a href="#elevate" className="hover:text-[#6378f7] transition-colors">
-            Why Us
+            About
           </a>
           <a href="#services" className="hover:text-[#6378f7] transition-colors">
             Services
           </a>
           <a href="#what-we-do" className="hover:text-[#6378f7] transition-colors">
-            Simulator
+            Our Approach
           </a>
           <a href="#pricing" className="hover:text-[#6378f7] transition-colors text-[#8496ff] font-semibold flex items-center gap-1">
-            <span>Pricing (10k-20k)</span>
+            <span>Packages</span>
           </a>
           <a href="#impact" className="hover:text-[#6378f7] transition-colors">
-            Case Studies
+            Selected Work
           </a>
           <a href="#process" className="hover:text-[#6378f7] transition-colors">
             Our Process
           </a>
           <a href="#modern-marketing" className="hover:text-[#6378f7] transition-colors">
-            Growth Grader
+            Our Method
           </a>
         </nav>
 
@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
         <div className="hidden sm:flex items-center gap-3">
           {/* WhatsApp Direct Link */}
           <a
-            href="https://wa.me/919994735573?text=Hi%20growing.%20team,%20I%20would%20like%20to%20request%20a%20Growth%20Proposal%20for%20my%20business."
+            href="https://wa.me/919994735573?text=Hi%20Grow%20Marketings,%20I%20would%20like%20to%20discuss%20a%20digital%20marketing%20project."
             target="_blank"
             rel="noopener noreferrer"
             className="px-3.5 py-2 rounded-lg bg-emerald-950/40 border border-emerald-500/40 hover:bg-emerald-900/40 text-emerald-300 font-semibold text-xs flex items-center gap-1.5 transition-colors"
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
             onClick={onOpenProposal}
             className="px-5 py-2 bg-[#2b3785] hover:bg-[#34449e] text-white font-bold text-xs rounded-lg transition-all duration-200 flex items-center gap-1.5 shadow-lg shadow-[#2b3785]/30 hover:shadow-[#2b3785]/50 hover:scale-[1.02]"
           >
-            <span>Get Proposal</span>
+            <span>Discuss Project</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
         </div>
@@ -102,7 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-[#6378f7]"
             >
-              Why Us
+              About
             </a>
             <a 
               href="#services" 
@@ -116,14 +116,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-[#6378f7]"
             >
-              Simulator
+              Our Approach
             </a>
             <a 
               href="#pricing" 
               onClick={() => setMobileMenuOpen(false)}
               className="text-[#8496ff] font-semibold flex items-center justify-between"
             >
-              <span>Startup Plans (₹10k - ₹20k)</span>
+              <span>Packages</span>
               <span className="text-[10px] bg-[#2b3785]/40 px-2 py-0.5 rounded border border-[#2b3785]">New</span>
             </a>
             <a 
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-[#6378f7]"
             >
-              Case Studies
+              Selected Work
             </a>
             <a 
               href="#process" 
@@ -151,13 +151,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
 
           <div className="pt-3 border-t border-neutral-800 space-y-2">
             <a
-              href="https://wa.me/919994735573?text=Hi%20growing.%20team,%20I%20would%20like%20to%20request%20a%20Growth%20Proposal%20for%20my%20business."
+              href="https://wa.me/919994735573?text=Hi%20Grow%20Marketings,%20I%20would%20like%20to%20discuss%20a%20digital%20marketing%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-2.5 px-4 bg-emerald-950/40 border border-emerald-500/40 text-emerald-300 font-semibold text-xs rounded-xl flex items-center justify-center gap-2"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
-              <span>WhatsApp: 9994735573</span>
+              <span>WhatsApp: +91 99947 35573</span>
             </a>
 
             <button
@@ -168,7 +168,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenProposal }) => {
               }}
               className="w-full py-3 bg-[#2b3785] hover:bg-[#34449e] text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-lg shadow-[#2b3785]/30"
             >
-              <span>Get a Free Proposal</span>
+              <span>Discuss Your Project</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>

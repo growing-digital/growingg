@@ -11,68 +11,63 @@ export const StartupPricingSection: React.FC<StartupPricingSectionProps> = ({ on
   const plans = [
     {
       id: 'starter-growth',
-      name: 'Starter Launch',
-      tagline: 'Ideal for early-stage bootstrapped startups testing initial product-market fit.',
+      name: 'Starter Presence',
+      tagline: 'For businesses building a clearer and more consistent online presence.',
       price: '10,000',
       period: '/ month',
       popular: false,
-      badge: 'Early Stage',
+      badge: 'Start Here',
       gradient: 'from-neutral-900 to-neutral-950',
       borderColor: 'border-neutral-800 hover:border-neutral-700',
       features: [
-        'Dedicated Campaign Setup on Meta (FB/IG) or Google',
-        'Up to 8 Custom Tested Ad Creatives / Static Banners',
-        'Basic Pixel & Conversion Event Tracking Setup',
-        'Target Audience & Competitor Teardown Research',
-        'Bi-weekly Performance Report & Optimization',
-        'Email & WhatsApp Support (48h SLA)',
+        'Choose a defined set of digital marketing deliverables',
+        'SEO, social content or campaign support based on agreed scope',
+        'Brand-aligned creative assets as specified in the proposal',
+        'Initial planning and priority setting',
+        'Periodic review of agreed work',
       ],
-      deliverable: 'Tested ad campaigns ready to drive your first 100+ paid leads or sales.',
-      cta: 'Choose Starter (₹10,000)',
+      deliverable: 'A clearly scoped starting point matched to your business priorities.',
+      cta: 'Discuss Starter Package',
     },
     {
       id: 'growth-accelerator',
-      name: 'Startup Accelerator',
-      tagline: 'Engineered for funded or revenue-generating startups ready to scale predictably.',
+      name: 'Growth Partner',
+      tagline: 'For businesses ready to coordinate multiple digital channels.',
       price: '15,000',
       period: '/ month',
       popular: true,
-      badge: 'Most Popular for Startups',
+      badge: 'Popular Choice',
       gradient: 'from-neutral-900 via-[#2b3785]/20 to-neutral-950',
       borderColor: 'border-[#2b3785] ring-1 ring-[#5970ff]/40 shadow-xl shadow-[#2b3785]/20',
       features: [
-        'Multi-Channel Scaling (Meta Ads + Google Search & Shopping)',
-        '16+ Modular Direct-Response Ad Variations (Reels + Static)',
-        'Server-Side Conversion API (CAPI) Integration (Zero Data Loss)',
-        '1 High-Converting Custom CRO Landing Page Design',
-        'Weekly Campaign Bid & Creative Refresh Sprints',
-        'Dedicated WhatsApp Growth Channel & Bi-weekly Strategy Call',
-        'Automated Live Reporting Dashboard Access',
+        'A coordinated mix of selected marketing services',
+        'Website, SEO, social media or paid campaign work by agreement',
+        'Content and creative planning within the agreed scope',
+        'Campaign or project review checkpoints',
+        'Communication and next-step planning',
       ],
-      deliverable: 'Full-funnel traffic & conversion engine to scale month-over-month revenue.',
-      cta: 'Start Accelerator (₹15,000)',
+      deliverable: 'A coordinated digital marketing plan with defined deliverables.',
+      cta: 'Discuss Growth Package',
     },
     {
       id: 'scale-domination',
-      name: 'Scale & Dominate',
-      tagline: 'Comprehensive growth team partnership for hyper-growth startups & D2C brands.',
+      name: 'Custom Growth',
+      tagline: 'For businesses that need a broader combination of marketing and web services.',
       price: '20,000',
       period: '/ month',
       popular: false,
-      badge: 'Complete Growth Suite',
+      badge: 'Expanded Scope',
       gradient: 'from-neutral-900 to-neutral-950',
       borderColor: 'border-neutral-800 hover:border-[#2b3785]/60',
       features: [
-        'Omnichannel Domination: Meta + Google PMax + YouTube/LinkedIn',
-        '25+ UGC Video Hooks, Motion Graphics & High-CTR Ad Assets',
-        'Advanced Funnel Architecture + 2 Custom Headless Landing Pages',
-        'Email & WhatsApp Retention Automation (Klaviyo / WhatsApp Flows)',
-        'Daily Budget Day-Parting & Algorithmic Bid Scaling',
-        'Dedicated Senior Growth Lead + Instant Slack/WhatsApp Channel',
-        '24/7 Real-Time Attribution Dashboard & Competitor Counter-Bidding',
+        'Broader service scope based on business needs',
+        'Website and digital marketing coordination where required',
+        'SEO, paid advertising, social media and creative support by agreement',
+        'Defined review and optimization priorities',
+        'A tailored proposal with scope and deliverables',
       ],
-      deliverable: 'Complete outsourced performance marketing & creative powerhouse.',
-      cta: 'Dominate Market (₹20,000)',
+      deliverable: 'A tailored scope for businesses with multiple digital priorities.',
+      cta: 'Request Custom Scope',
     },
   ];
 
@@ -86,13 +81,13 @@ export const StartupPricingSection: React.FC<StartupPricingSectionProps> = ({ on
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2b3785]/20 border border-[#2b3785]/40 text-[#8496ff] text-xs font-mono font-semibold mb-3">
             <Rocket className="w-3.5 h-3.5" />
-            <span>Transparent Startup Plans</span>
+            <span>Flexible Service Packages</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Founder-Friendly Pricing for <span className="text-[#5970ff]">Early-Stage Startups</span>
+            Flexible Digital Marketing Packages for <span className="text-[#5970ff]">Growing Businesses</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-neutral-400">
-            No bloated agency retainers, no long-term lock-ins. Pick a plan built specifically for early-stage startup cash flow and unit economics.
+            Choose a starting package based on your priorities. Final deliverables, timelines, ad spend and any third-party costs should be confirmed in your written proposal before work begins.
           </p>
 
           {/* Billing Cycle Pill */}
@@ -226,13 +221,13 @@ export const StartupPricingSection: React.FC<StartupPricingSectionProps> = ({ on
             <div>
               <h4 className="text-sm font-bold text-white">Need a customized scope or milestone-based structure?</h4>
               <p className="text-xs text-neutral-400 mt-0.5">
-                Every startup is unique. We tailor our deliverables to match your current runway and growth targets.
+                Every business is different. Final scope, timelines, advertising spend and third-party costs are confirmed in your proposal.
               </p>
             </div>
           </div>
           <button
             type="button"
-            onClick={() => onSelectPlan && onSelectPlan('Custom Startup Scope', '₹10K - ₹20K')}
+            onClick={() => onSelectPlan && onSelectPlan('Custom Business Scope', '₹10K - ₹20K')}
             className="whitespace-nowrap px-5 py-2.5 rounded-xl border border-neutral-700 bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-semibold transition-colors cursor-pointer"
           >
             Request Custom Scope

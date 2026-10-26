@@ -40,8 +40,8 @@ export const SmartphoneGraphic: React.FC = () => {
     { 
       app: 'Meta Advantage+', 
       icon: Facebook, 
-      text: 'ROAS reached 6.2x (+148% surge)', 
-      sub: '₹12,40,000 generated today',
+      text: 'Sample campaign performance update', 
+      sub: 'Illustrative results preview',
       time: 'Just now', 
       color: 'bg-blue-600' 
     },
@@ -49,7 +49,7 @@ export const SmartphoneGraphic: React.FC = () => {
       app: 'Instagram Engine', 
       icon: Instagram, 
       text: 'Viral Hook Reel crossed 280K views', 
-      sub: '+4,210 high-intent followers',
+      sub: 'Illustrative audience activity',
       time: '2m ago', 
       color: 'bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-700' 
     },
@@ -57,14 +57,14 @@ export const SmartphoneGraphic: React.FC = () => {
       app: 'Google PMax & Search', 
       icon: TrendingUp, 
       text: '28 B2B Demo requests booked', 
-      sub: 'Acquisition cost dropped 34%',
+      sub: 'Sample campaign insight',
       time: '5m ago', 
       color: 'bg-emerald-600' 
     },
     { 
-      app: 'growing CAPI Hub', 
+      app: 'Campaign Tracking Preview', 
       icon: Zap, 
-      text: 'New order batch: ₹9,85,000 closed', 
+      text: 'Sample conversion notification', 
       sub: 'Server-side 99.4% EMQ verified',
       time: '11m ago', 
       color: 'bg-[#2b3785]' 
@@ -112,6 +112,9 @@ export const SmartphoneGraphic: React.FC = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
     >
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-40 px-3 py-1 rounded-full bg-neutral-900/95 border border-neutral-700 text-[9px] font-mono uppercase tracking-wider text-neutral-300">
+        Illustrative dashboard · sample data
+      </div>
       {/* Dynamic Ambient Backlight in #2b3785 */}
       <div className="absolute -inset-6 bg-gradient-to-tr from-[#2b3785]/45 via-[#3d50c2]/30 to-indigo-900/20 blur-3xl rounded-full -z-10 transition-opacity duration-700 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#2b3785]/30 rounded-full blur-[90px] -z-10 pointer-events-none" />
@@ -131,7 +134,7 @@ export const SmartphoneGraphic: React.FC = () => {
         <div>
           <div className="flex items-center gap-1.5">
             <p className="text-[11px] text-neutral-400 font-medium tracking-wide uppercase">Omnichannel Surge</p>
-            <span className="text-[9px] bg-emerald-500/20 text-emerald-400 px-1 rounded font-mono font-bold">LIVE</span>
+            <span className="text-[9px] bg-emerald-500/20 text-emerald-400 px-1 rounded font-mono font-bold">DEMO</span>
           </div>
           <p className="text-xs sm:text-sm font-bold text-white flex items-center gap-1.5">
             +38.4K Audience 
@@ -155,7 +158,7 @@ export const SmartphoneGraphic: React.FC = () => {
         <div>
           <div className="flex items-center gap-1">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <p className="text-[10px] text-neutral-400 font-medium uppercase tracking-wider">Enterprise Deal</p>
+            <p className="text-[10px] text-neutral-400 font-medium uppercase tracking-wider">Campaign Enquiry</p>
           </div>
           <p className="text-xs font-bold text-white font-mono flex items-center gap-1">
             ₹4,50,000 <span className="text-emerald-400 font-sans text-[11px] font-normal">Closed</span>
@@ -174,9 +177,9 @@ export const SmartphoneGraphic: React.FC = () => {
           <GrowingLogo size={24} />
         </div>
         <div>
-          <p className="text-[11px] text-neutral-400 font-medium">growing AI Suite</p>
+          <p className="text-[11px] text-neutral-400 font-medium">Marketing Preview</p>
           <div className="flex items-center gap-1.5">
-            <span className="text-xs font-extrabold text-white">4.82x ROAS</span>
+            <span className="text-xs font-extrabold text-white">Sample ROAS</span>
             <span className="text-[10px] text-[#8496ff] bg-[#2b3785]/40 px-1.5 py-0.5 rounded border border-[#2b3785] font-mono">
               Scale Mode
             </span>
@@ -196,7 +199,7 @@ export const SmartphoneGraphic: React.FC = () => {
         </div>
         <div>
           <p className="text-[10px] text-neutral-400 font-medium">Monthly Pipeline</p>
-          <p className="text-xs font-bold text-white font-mono">₹28,45,000</p>
+          <p className="text-xs font-bold text-white font-mono">Sample value</p>
         </div>
       </div>
 
@@ -246,7 +249,7 @@ export const SmartphoneGraphic: React.FC = () => {
                         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                         <span className="font-mono font-bold">CAPI Engine Active</span>
                       </div>
-                      <span className="text-[#8496ff] font-mono text-[9px]">₹35K/hr</span>
+                      <span className="text-[#8496ff] font-mono text-[9px]">Sample</span>
                     </div>
                   ) : (
                     <>
@@ -482,7 +485,7 @@ export const SmartphoneGraphic: React.FC = () => {
                       </div>
                       <div>
                         <p className="text-[11px] font-bold text-white leading-none">Meta Dynamic Scale</p>
-                        <p className="text-[9px] text-neutral-400 mt-0.5">Budget: ₹35,000/day • 6.2x ROAS</p>
+                        <p className="text-[9px] text-neutral-400 mt-0.5">Illustrative budget and return metrics</p>
                       </div>
                     </div>
                     <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-md font-mono font-bold flex items-center gap-1">

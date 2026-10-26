@@ -48,7 +48,7 @@ export const GrowingLogo: React.FC<GrowingLogoProps> = ({
 
       {showText && (
         <span className={`font-black tracking-tight text-xl lowercase ${textColor}`}>
-          growing<span className="text-[#2b3785]">.</span>
+          Grow Marketings<span className="text-[#2b3785]">.</span>
         </span>
       )}
     </div>

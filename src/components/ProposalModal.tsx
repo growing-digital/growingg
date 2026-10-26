@@ -39,10 +39,10 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
     phone: '',
     whatsappNote: '',
     monthlyBudget: initialPlanPrice 
-      ? `${initialService || 'Startup Plan'} (${initialPlanPrice})` 
-      : '₹15,000 / month (Accelerator)',
+      ? `${initialService || 'Service Package'} (${initialPlanPrice})` 
+      : '₹15,000 / month (Growth Partner)',
     primaryGoal: 'leads',
-    selectedService: initialService || 'Startup Performance Marketing (₹10k - ₹20k)',
+    selectedService: initialService || 'Digital Marketing Services',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -50,7 +50,7 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
 
   // Construct direct WhatsApp proposal URL
   const buildWhatsAppMessage = () => {
-    const text = `Hi growing. team! 👋%0A%0AI would like to request a Growth Proposal for my startup:%0A%0A*Name:* ${encodeURIComponent(formData.fullName || 'Founder')}%0A*Company / Brand:* ${encodeURIComponent(formData.companyName || 'My Startup')}%0A*Website / Social:* ${encodeURIComponent(formData.websiteUrl || 'Not provided')}%0A*Selected Plan / Budget:* ${encodeURIComponent(formData.monthlyBudget)}%0A*Target Objective:* ${encodeURIComponent(formData.primaryGoal.toUpperCase())}%0A*Email:* ${encodeURIComponent(formData.email || 'N/A')}%0A*Client Phone:* ${encodeURIComponent(formData.phone || 'N/A')}%0A${formData.whatsappNote ? `*Requirement Notes:* ${encodeURIComponent(formData.whatsappNote)}%0A` : ''}%0APlease send the custom growth roadmap and sprint proposal to this WhatsApp number.`;
+    const text = `Hi Grow Marketings, 👋%0A%0AI would like to request a Growth Proposal for my business:%0A%0A*Name:* ${encodeURIComponent(formData.fullName || 'Founder')}%0A*Company / Brand:* ${encodeURIComponent(formData.companyName || 'My Business')}%0A*Website / Social:* ${encodeURIComponent(formData.websiteUrl || 'Not provided')}%0A*Selected Plan / Budget:* ${encodeURIComponent(formData.monthlyBudget)}%0A*Target Objective:* ${encodeURIComponent(formData.primaryGoal.toUpperCase())}%0A*Email:* ${encodeURIComponent(formData.email || 'N/A')}%0A*Client Phone:* ${encodeURIComponent(formData.phone || 'N/A')}%0A${formData.whatsappNote ? `*Requirement Notes:* ${encodeURIComponent(formData.whatsappNote)}%0A` : ''}%0APlease send the proposal for the requested services to this WhatsApp number.`;
     return `https://wa.me/${WHATSAPP_INTL}?text=${text}`;
   };
 
@@ -84,11 +84,11 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
             <div className="flex items-center gap-2 mb-2">
               <GrowingLogo size={20} />
               <span className="text-xs font-mono text-[#8496ff] uppercase tracking-widest font-semibold">
-                growing Custom Proposal
+                Grow Marketings Proposal
               </span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Get Your Custom <span className="text-[#6378f7]">Growth Blueprint</span>
+              Get Your Custom <span className="text-[#6378f7]">Project Proposal</span>
             </h3>
             
             {/* WhatsApp Direct Send Banner */}
@@ -140,7 +140,7 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
             <form onSubmit={handleSubmit}>
               {step === 1 && (
                 <div className="space-y-4">
-                  <h4 className="text-sm font-semibold text-neutral-300">Step 1: Tell us about your startup or brand</h4>
+                  <h4 className="text-sm font-semibold text-neutral-300">Step 1: Tell us about your business or brand</h4>
                   <div>
                     <label className="block text-xs text-neutral-400 mb-1 flex items-center gap-1.5">
                       <Building className="w-3.5 h-3.5 text-[#5970ff]" />
@@ -209,15 +209,15 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
 
               {step === 2 && (
                 <div className="space-y-4">
-                  <h4 className="text-sm font-semibold text-neutral-300">Step 2: Startup Plan & Monthly Budget</h4>
+                  <h4 className="text-sm font-semibold text-neutral-300">Step 2: Service Package & Budget</h4>
                   <div>
-                    <label className="block text-xs text-neutral-400 mb-2">Select Your Startup Plan Tier</label>
+                    <label className="block text-xs text-neutral-400 mb-2">Select a Package or Budget</label>
                     <div className="grid grid-cols-2 gap-2.5">
                       {[
-                        { label: '₹10,000 / month (Starter Launch)', desc: 'Meta/Google ads + 8 creatives' },
-                        { label: '₹15,000 / month (Startup Accelerator)', desc: 'Multi-channel + CAPI + 16 creatives' },
-                        { label: '₹20,000 / month (Scale & Dominate)', desc: 'Omnichannel + 25+ creatives + Funnels' },
-                        { label: 'Custom Scope (₹10k - ₹20k+)', desc: 'Custom milestone-based package' }
+                        { label: '₹10,000 / month (Starter Presence)', desc: 'A defined starting scope based on your priorities' },
+                        { label: '₹15,000 / month (Growth Partner)', desc: 'A coordinated mix of selected digital services' },
+                        { label: '₹20,000 / month (Custom Growth)', desc: 'A broader scope tailored to your business needs' },
+                        { label: 'Custom Scope', desc: 'Discuss your requirements and request a tailored proposal' }
                       ].map((tier) => (
                         <button
                           key={tier.label}
@@ -301,7 +301,7 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({
                       <input
                         type="email"
                         required
-                        placeholder="rajesh@yourstartup.com"
+                        placeholder="you@yourbusiness.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white placeholder-neutral-600 text-sm focus:outline-none focus:border-[#2b3785]"
