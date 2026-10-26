@@ -6,10 +6,10 @@ interface ElevateBrandSectionProps {
 }
 
 const benefits = [
-  { icon: Target, title: 'Clear Strategy', description: 'Prioritize marketing activities around your audience, goals and available budget.' },
-  { icon: Palette, title: 'Consistent Branding', description: 'Create a recognizable brand across your website, social media and marketing materials.' },
-  { icon: Globe, title: 'Stronger Online Presence', description: 'Help potential customers discover your business through search and digital channels.' },
-  { icon: BarChart3, title: 'Measure and Improve', description: 'Review relevant performance data and refine the work as your business evolves.' },
+  { icon: Target, title: 'Marketing Consultant', description: 'Prioritize marketing activities around your audience, goals and available budget.' },
+  { icon: Palette, title: 'Campaign (Growth campaign)', description: 'Create a recognizable brand across your website, social media and marketing materials.' },
+  { icon: Globe, title: 'Festival Campaign ', description: 'Help potential customers discover your business through search and digital channels.' },
+  { icon: BarChart3, title: 'Branding Stratagy', description: 'Review relevant performance data and refine the work as your business evolves.' },
 ];
 
 export const ElevateBrandSection: React.FC<ElevateBrandSectionProps> = ({ onOpenProposal }) => (
